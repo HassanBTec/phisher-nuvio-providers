@@ -43,11 +43,11 @@ function extractMegacloud(embedUrl, effectiveType) {
         .then(page => {
             if (!page) return [];
 
-            const nonce = page.match(/window\._xy_ws\s*=\s*"([^"]+)"/)?.[1];
-            if (!nonce) return [];    
+            const nonce =
+            page.match(/window\._xy_ws\s*=\s*"([^"]+)"/)?.[1] ||
+            page.match(/_is_th:([A-Za-z0-9]{48})/)?.[1];
 
             if (!nonce) return [];
-
             const id = embedUrl.split('/').pop().split('?')[0];
             const apiUrl = `${mainUrl}/embed-2/v3/e-1/getSources?id=${id}&_k=${nonce}`;
 
