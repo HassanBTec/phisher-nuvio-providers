@@ -43,12 +43,8 @@ function extractMegacloud(embedUrl, effectiveType) {
         .then(page => {
             if (!page) return [];
 
-            let nonce =
-                page.match(/\b[a-zA-Z0-9]{48}\b/)?.[0] ??
-                (() => {
-                    const m = page.match(/\b([a-zA-Z0-9]{16})\b.*?\b([a-zA-Z0-9]{16})\b.*?\b([a-zA-Z0-9]{16})\b/);
-                    return m ? m[1] + m[2] + m[3] : null;
-                })();
+            const nonce = page.match(/window\._xy_ws\s*=\s*"([^"]+)"/)?.[1];
+            if (!nonce) return [];    
 
             if (!nonce) return [];
 
