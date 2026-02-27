@@ -55,7 +55,7 @@
         "tv"
       ],
       "filename": "src/providers/xdmovies.js",
-      "enabled": true,
+      "enabled": false,
       "formats": [
         "mp4",
         "mkv"
