@@ -24,45 +24,25 @@
       ]
     },
     {
-      "id": "HiAnime",
-      "name": "HiAnime",
-      "description": "HiAnime Anime Streaming",
-      "version": "1.5.0",
+      "id": "AllWish",
+      "name": "AllWish",
+      "description": "AllWish Anime Streaming",
+      "version": "1.0.0",
       "author": "Phisher",
       "supportedTypes": [
         "movie",
-        "tv"
+        "tv",
+        "anime"
       ],
-      "filename": "src/providers/hianime.js",
+      "filename": "src/providers/allwish.js",
       "enabled": true,
       "formats": [
         "mp4",
         "mkv"
       ],
-      "logo": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/hianime.png",
+      "logo": "https://all-wish.me/assets/logo.png",
       "contentLanguage": [
         "en"
-      ]
-    },
-    {
-      "id": "XDMovies",
-      "name": "XDMovies",
-      "description": "XDMovies Multi-Lang Movies/TVSeries Streaming",
-      "version": "1.1.2",
-      "author": "Phisher",
-      "supportedTypes": [
-        "movie",
-        "tv"
-      ],
-      "filename": "src/providers/xdmovies.js",
-      "enabled": false,
-      "formats": [
-        "mp4",
-        "mkv"
-      ],
-      "logo": "https://xdmovies.site/assets/logo1.png",
-      "contentLanguage": [
-        "hi"
       ]
     }
   ]

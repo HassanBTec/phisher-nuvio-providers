@@ -1,6 +1,6 @@
-const { getStreams } = require('./src/providers/hianime.js');
+const { getStreams } = require('./src/providers/anichi.js');
 
-getStreams('95479', 'tv',2,17).then(streams => {
+getStreams('127532', 'tv',1,1).then(streams => {
   console.log('Found', streams.length, 'streams');
   streams.forEach(stream => console.log(`${stream.name}: ${stream.quality} - ${stream.url}`));
 }).catch(console.error);
