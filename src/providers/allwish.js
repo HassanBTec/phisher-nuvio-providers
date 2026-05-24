@@ -324,6 +324,28 @@ async function extractMegaPlay(
   }
 }
 
+async function resolveTmdbId(
+  id,
+  mediaType
+) {
+  if (!String(id).startsWith("tt")) {
+    return id;
+  }
+
+  const url =
+    `https://api.themoviedb.org/3/find/${id}` +
+    `?api_key=${TMDB_API_KEY}` +
+    `&external_source=imdb_id`;
+
+  const data = await fetchJson(url);
+
+  if (mediaType === "movie") {
+    return data.movie_results?.[0]?.id;
+  }
+
+  return data.tv_results?.[0]?.id;
+}
+
 // ======================
 // Main Provider
 // ======================
@@ -344,10 +366,10 @@ async function getStreams(
     // ======================
 
     const title =
-      await getTmdbTitle(
-        tmdbId,
-        mediaType
-      );
+    await getTmdbTitle(
+    tmdbId,
+    mediaType
+  );
 
     if (!title) {
       console.log(
