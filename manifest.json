@@ -44,6 +44,24 @@
       "contentLanguage": [
         "en"
       ]
+    },
+    {
+      "id": "Goojara",
+      "name": "Goojara",
+      "description": "Goojara Streaming",
+      "version": "1.0.0",
+      "author": "Phisher",
+      "supportedTypes": [
+        "movie",
+        "tv",
+        "anime"
+      ],
+      "filename": "src/providers/goojara.js",
+      "enabled": true,
+      "logo": "https://www.google.com/s2/favicons?domain=goojara.to/&sz=%size%",
+      "contentLanguage": [
+        "en"
+      ]
     }
   ]
 }
