@@ -1,6 +1,6 @@
 {
-  "name": "Phisher's Repo",
-  "version": "1.0.0",
+  "name": "Phisher custom Repo",
+  "version": "1.0.1",
   "scrapers": [
     {
       "id": "MoviesDrive",
