@@ -1,6 +1,6 @@
 {
-  "name": "Phisher custom Repo",
-  "version": "1.0.1",
+  "name": "Phisher's Repo",
+  "version": "1.0.0",
   "scrapers": [
     {
       "id": "MoviesDrive",
@@ -44,18 +44,6 @@
       "contentLanguage": [
         "en"
       ]
-    },
-    {
-    "id": "goojara",
-    "name": "Goojara Scraper",
-    "description": "Goojara Scraper",
-    "version": "1.0.0",
-    "author": "Name auth",
-    "supportedTypes": ["movie", "tv", "anime"],
-    "filename": "src/providers/goojara.js",
-    "enabled": true,
-    "logo": "https://www.google.com/s2/favicons?domain=goojara.to/&sz=%size%",
-    "contentLanguage": ["en"]
-  }
+    }
   ]
 }
